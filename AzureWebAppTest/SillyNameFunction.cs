@@ -10,10 +10,10 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace AzureWebAppTest
 {
-    public static class MyTestFunction3
+    public static class SillyNameFunction
     {
-        // http://localhost:7071/api/MyTestFunction3
-        [FunctionName("MyTestFunction3")]
+        // http://localhost:7071/api/SillyNameFunction
+        [FunctionName("SillyNameFunction")]
         public static async Task<object> Run([HttpTrigger(WebHookType = "genericJson")]HttpRequestMessage req, TraceWriter log)
         {
             log.Info($"Webhook was triggered2!");
